@@ -19,7 +19,7 @@ function App() {
 
   axios.defaults.withCredentials = true;
   useEffect(() => {
-    axios.get('http://localhost:3001/')
+    axios.get('https://blog-app-app.vercel.app/')
     .then(user => {
       setUser(user.data)
     })
