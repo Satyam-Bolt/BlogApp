@@ -11,11 +11,7 @@ const PostModel = require('./models/PostModel')
 
 const app = express()
 app.use(express.json())
-app.use(cors({
-    origin: ["https://blog-app-frontend-omega.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-}))
+app.use(cors())
 app.use(cookieParser())
 app.use(express.static('public'))
 // mongoose.connect('mongodb://127.0.0.1:27017/blog');
