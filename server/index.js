@@ -89,7 +89,7 @@ app.post('/login', (req, res) => {
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'Public/Images')
+        cb(null, 'https://drive.google.com/drive/folders/1Jsfc08s5X-lZ3hr_XgbJYmAofnRqZ3J2?usp=sharing')
     },
     filename: (req, file, cb) => {
         cb(null, file.fieldname + "_" + Date.now() + path.extname(file.originalname))
